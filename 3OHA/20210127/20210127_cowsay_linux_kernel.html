@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>3OHA</title>
+<!--
+<style>
+    body {
+        max-width: 960px;
+        margin: auto;
+    }
+</style>
+-->
+</head>
+<body>
+
+<div style="background-color:black; color:white; padding:13px;">
+<pre>
+  ██████╗  ██████╗ ██╗  ██╗ █████╗ 
+  ╚════██╗██╔═══██╗██║  ██║██╔══██╗
+   █████╔╝██║   ██║███████║███████║
+   ╚═══██╗██║   ██║██╔══██║██╔══██║
+  ██████╔╝╚██████╔╝██║  ██║██║  ██║
+  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+</pre>
+</div>
+
+<p>
+Welcome to 3OHA, a place for random notes, thoughts, and factoids that I
+want to share or remember.<br>
+</p>
+<hr>
+
+<br>
+<p>
+27 January 2021
+</p>
+
+<h1>A cowsay in the Linux kernel</h1>
+
+<p>
+<code>cowsay</code> is a classic Unix command line program that generates
+ASCII pictures of a cow with a user-provided message. It was written by
+Tony Monroe in Perl and the original page is still accessible <a
+href="https://web.archive.org/web/20120225123719/http://www.nog.net/~tony/warez/cowsay.shtml">here</a>.
+The program has been rewritten multiple times and evolved to support
+creatures other than cows. You can play with a few of them in the
+<a href="https://textart.io/cowsay">textart.io</a> site.
+</p>
+
+<p>
+Cows have been part of the computer culture for a long time, so it doesn't
+come as a surprise to find one buried in the Linux kernel. In the 5.11-rc6
+kernel version, it is located in the
+<a href="
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/parisc/kernel/traps.c?h=v5.11-rc6#n230">line
+230</a> of the <code>/arch/parisc/kernel/traps.c</code> file:
+</p>
+
+<p>
+<img src="cow.png" width="600" style="border: 1px solid black;
+display: block; margin-right: 20px; margin-bottom: 20px; padding: 1px;
+border-radius: 7px;" alt="cowsay"/>
+</p>
+
+The message is related to the Linux support for the PA-RISC architecture. I
+found some references to it online, ranging from <a href="https://android.googlesource.com/kernel/common.git/+/e541fd815db94038c9615c4f645a0639c0e474be">startup crashes in the
+Android Linux kernel</a> to a <a
+href="http://lists.parisc-linux.org/pipermail/parisc-linux/2002-November/018252.html">2002
+message in the Linux PA-RISK mailing list</a>.
+</p>
+
+
+<br>
+<hr>
+&#169; Juan Tapiador
+
+<p>
+Everything posted here is by default published under a
+<a href=https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode>
+CC BY-NC-SA 4.0</a> Creative Commons license. You may redistribute it with
+attribution but not modify it. I may subsequently assign the residual
+copyright to an academic publisher.<br><br>
+
+</body>
+</html>
+
